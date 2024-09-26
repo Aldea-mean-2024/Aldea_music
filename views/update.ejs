@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Song</title>
+</head>
+<body>
+    <h1>Edit Song</h1>
+    <form id="editSongForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="hinahanap hanap kita"><br><br>
+        
+        <label for="artist">Artist:</label>
+        <input type="text" id="artist" name="artist" value="Rivermaya"><br><br>
+        
+        <label for="audioFile">Current Audio File: hinahanap-hanap kita.mp3</label><br><br>
+        
+        <label for="newAudioFile">Upload New Audio File (optional):</label>
+        <input type="file" id="newAudioFile" name="newAudioFile"><br><br>
+        
+        <button type="button" onclick="updateSong()">Update Song</button>
+        <button type="button" onclick="goBackToPlaylist()">Back to Playlist</button>
+    </form>
+
+    <script>
+        function updateSong() {
+            const title = document.getElementById('title').value;
+            const artist = document.getElementById('artist').value;
+            const newAudioFile = document.getElementById('newAudioFile').files[0];
+
+            // Here you would typically send this data to your server to update the song details
+            console.log('Updating song with title:', title, 'artist:', artist, 'new audio file:', newAudioFile);
+        }
+
+        function goBackToPlaylist() {
+            // Logic to go back to the playlist
+            console.log('Going back to playlist');
+        }
+    </script>
+</body>
+</html>

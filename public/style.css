@@ -1,0 +1,79 @@
+/* public/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(96, 203, 130);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+h1 {
+    color: #044a21;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(148, 212, 173); /* Set the table background to white */
+}
+
+th, td {
+    border: 1px solid #0a5036;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0de122;
+}
+
+tr:hover {
+    background-color: #10e77b;
+}
+
+a {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Button styles */
+button {
+    background-color: #2196F3; /* Blue background for buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Link button styles (for 'Add New Song' and edit links) */
+.edit-link, .add-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.edit-link:hover, .add-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.box {
+    background-color: rgb(10, 67, 8); 
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
